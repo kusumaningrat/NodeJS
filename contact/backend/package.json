@@ -1,0 +1,27 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Contact App Backend",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kusuma16/NodeJS.git"
+  },
+  "author": "Kusuma Ningrat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kusuma16/NodeJS/issues"
+  },
+  "homepage": "https://github.com/Kusuma16/NodeJS#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.13",
+    "nodemon": "^2.0.15"
+  }
+}
