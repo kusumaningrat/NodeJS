@@ -11,7 +11,9 @@
         <ul class="collection with-header">
             <% if (items.length>0) { %> 
             <% items.forEach(item => { %>
-                <li class="collection-item"><div><%= item.name %> | <%= item.price %>  <a href="#!" class="secondary-content">
+                <li class="collection-item"><div>
+                <a href="/items/<%= item._id %> "><%= item.name %> | <%= item.price %> </a>
+                <a href="#!" class="secondary-content">
                 <i class="material-icons">edit</i>
                 <i class="material-icons">delete</i>
             </a></div></li>

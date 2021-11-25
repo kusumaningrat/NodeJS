@@ -44,6 +44,21 @@ app.post('/items',(req,res) => {
 
 })
 
+app.get('/items/:id', (req,res) => {
+    const id = req.params.id;
+    Item.findById(id).
+    then(result => {
+        console.log('result', result)
+        res.render('item-detail', {item: result})
+    })
+})
+app.get('/delete/:id', (req,res) => {
+    const id = req.params.id;
+    Item.Delete(id).then(result => {
+        delet
+    })
+})
+
 app.use((req,res) => {
     res.render('error'); 
 })

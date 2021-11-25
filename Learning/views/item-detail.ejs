@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head.ejs') %> 
+
+<body>
+    <%- include('./partials/nav.ejs') %> 
+
+    
+    <div class="container">
+        <div class="header">
+            <h4>Item Detail</h4>
+            <div>
+                <h5>Item Name: <%= item.name %> </h5>
+                <h5>Item Price: <%= item.price %> </h5>
+            </div>
+            <a href="/get-items" class="btn btn-primary" id="deleteBtn">Back</a>
+            <a href="/delete-items" class="btn btn-danger">Delete</a>
+        </div>
+    </div>
+</body>
+</html>
