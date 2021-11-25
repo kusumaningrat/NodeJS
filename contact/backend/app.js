@@ -13,8 +13,12 @@ app.use(bodyParser.urlencoded({
     extended: false
 }));
 
-app.use('/api/contact', routes);
+app.use('/', routes);
 app.use(cors());
+
+app.set('view engine', 'ejs')
+
+
 
 // Connect to database
 const connectDB = mongoose.connect(

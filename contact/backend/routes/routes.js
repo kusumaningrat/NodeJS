@@ -3,9 +3,11 @@ const router = express.Router();
 const Contact = require('../models/contact');
 
 
+
 // router.get('/', (req,res) => {
 //     res.send('<h1>Halaman Home</h1>')
 // });
+
 
 // INSERT DATA
 router.post('/', async(req,res) => {
@@ -27,6 +29,7 @@ router.post('/', async(req,res) => {
 });
 
 router.get('/', async(req,res) => {
+    res.render('Home')
     try{
         const getContact = await Contact.find();
         res.json(getContact);
