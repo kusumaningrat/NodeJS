@@ -1,11 +1,13 @@
 const express = require('express');
-const expressLayouts = require('express-ejs-layouts');
+var cors = require('cors')
+var expressLayouts = require('express-ejs-layouts');
 const app = express()
 const port = 3000;
 
+app.use(cors())
 // Gunakan ejs
 app.set('view engine', 'ejs');
-app.set(expressLayouts);
+app.use(expressLayouts);
 
 app.get('/', (req,res) => {
     const mahasiswa = [
@@ -30,18 +32,14 @@ app.get('/', (req,res) => {
 });
 
 app.get('/about', (req,res) => {
-    res.render('about', 
-    { 
+    res.render('about', {
         title: 'Halaman About',
-        layout: 'layouts/main_layout'
     });
 });
 
 app.get('/contact', (req,res) => {
-    res.render('contact', 
-    { 
+    res.render('contact', { 
         title: 'Halaman Contact',
-        layout: 'layouts/main_layout'
     });
 });
 

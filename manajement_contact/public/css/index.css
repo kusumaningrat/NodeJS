@@ -1,0 +1,17 @@
+.navbar-nav {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.carousel-item {
+    height: 400px;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: aliceblue;
+    color: white;
+    text-align: center;
+  }

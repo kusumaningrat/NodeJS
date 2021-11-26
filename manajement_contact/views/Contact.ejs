@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <%- include('../partials/head.ejs') %> 
+
+  <body>
+    
+    <!-- Navbar -->
+    <%- include('../partials/nav.ejs') %> 
+
+      <div class="container mt-4">
+          <h2>Daftar Contact</h2>
+          <a href="add-contact" class="btn btn-primary">Add Contact</a>
+          <table class="table caption-top mt-4">
+            <thead>
+              <tr>
+                <th scope="col">No</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">No Handphone</th>
+                <th scope="col">Address</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <% if(items.length > 0) { %> 
+                <% items.forEach(item => { %> 
+                  <th scope="row">1</th>
+                  <td><%= item.name %> ></td>
+                  <td>
+                      <a href="" class="btn btn-success">Detail</a>
+                      <a href="" class="btn btn-primary">Edit</a>
+                      <a href="" class="btn btn-danger">Delete</a>
+                  </td>
+                <% }); %> 
+                <% }else{ %>
+                  <li>There is no data</li> 
+                <% } %> 
+              </tr>
+            </tbody>
+          </table>
+      </div>
+    </body>
+</html>
