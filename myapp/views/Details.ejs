@@ -1,0 +1,22 @@
+<% if(!getContactName) { %>
+    <li style="color: red;">There's no data</li>
+<% }else{ %> 
+    <div class="card mt-5" style="width: 18rem;">
+        <img src="/img/profile.jpg" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title"><%= getContactName.nama %> </h5>
+          <p class="card-text"><%= getContactName.email %> </p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><strong>Phone:</strong>  <%= getContactName.noHP %> </li>
+          <li class="list-group-item"><strong>Address:</strong> <%= getContactName.alamat %> </li>
+        </ul>
+        <div class="card-body">
+          <a href="/contact" class="card-link btn btn-primary badge">Back</a>
+          <form action="/contact?_method=DELETE" method="POST" class="d-inline">
+              <input type="hidden" name="nama" value="<%= getContactName.nama %> ">
+              <button type="submit" class="btn btn-danger badge" onclick="return confirm('Are you sure?')">Delete</button>
+          </form>
+        </div>
+      </div>
+  <% } %> 

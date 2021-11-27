@@ -1,0 +1,28 @@
+<h3 style="margin-top: 15px;">Daftar Contact</h3>
+<a href="/add-contact" class="btn btn-primary mb-3">Tambah Contact</a>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">No</th>
+      <th scope="col">Nama</th>
+      <th scope="col">Email</th>
+      <th scope="col" style="width: 50px;">No_Handphone</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% let no = 1;  %> 
+    <% contacts.forEach(contacts => { %>
+    <tr>
+      <th scope="row"><%= no++ %> </th>
+      <td><%= contacts.nama %> </td>
+      <td><%= contacts.email %> </td>
+      <td><%= contacts.noHP %> </td>
+      <td>
+        <a href="/contact/<%= contacts.nama %> "><i class="bi bi-info-circle-fill"></i></i></a>
+        <a href=""><i class="bi bi-pencil-square"></i></a>
+      </td>
+    <% }); %> 
+    </tr>
+  </tbody>
+</table>
