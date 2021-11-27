@@ -1,4 +1,6 @@
 const express = require('express');
+const { body, validationResult,check } = require('express-validator');
+const validator = require('validator');
 const router = express.Router();
 const Contact = require('../models/contact');
 
@@ -10,7 +12,24 @@ const Contact = require('../models/contact');
 
 
 // INSERT DATA
-router.post('/', async(req,res) => {
+router.post('/', [
+    body('nama').custom(async(value) => {
+        const namaDup = await Contact.findOne({nama: value});
+        if(namaDup){
+            throw new Error('Nama sudah ada');
+        }
+        return true;
+    }),
+    body('email').custom(async(value) => {
+        const emailDup = await Contact.findOne({email: value});
+        if(emailDup){
+            throw new Error('Nama sudah ada');
+        }
+        return true;
+    }),
+    check('email', 'Email invalid').isEmail(),
+    check('noHP', 'No Handphone invalid').isMobilePhone('id-ID')], async(req,res) => {
+
     // Create a variable call contactPost
     const contactPost = new Contact({
         nama  : req.body.nama,
@@ -19,6 +38,12 @@ router.post('/', async(req,res) => {
         alamat: req.body.alamat
     });
 
+    const errors = validationResult(req);
+    if(!errors.isEmpty()){
+        return res.status(404).json({errors: errors.array() })
+    }
+
+    // Check existing data
     try{
         const saveContact = await contactPost.save();
         res.json(saveContact);
@@ -26,10 +51,10 @@ router.post('/', async(req,res) => {
     }catch(err){
         res.json({mesage: err})
     }
+    
 });
 
 router.get('/', async(req,res) => {
-    res.render('Home')
     try{
         const getContact = await Contact.find();
         res.json(getContact);
