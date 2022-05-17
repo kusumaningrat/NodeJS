@@ -38,10 +38,10 @@ router.post('/', [
         alamat: req.body.alamat
     });
 
-    const errors = validationResult(req);
-    if(!errors.isEmpty()){
-        return res.status(404).json({errors: errors.array() })
-    }
+    // const errors = validationResult(req);
+    // if(!errors.isEmpty()){
+    //     return res.status(404).json({errors: errors.array() })
+    // }
 
     // Check existing data
     try{
