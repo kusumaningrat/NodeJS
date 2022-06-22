@@ -3,7 +3,7 @@
 ```ASDK```
 
 | No | Server Name | DHIS2 VERSION | Memory | Hardisk | Environment | Web Address | Status |
-|--|--| -- | -- | -- | -- | -- | -- |
+|--|--| -- | -- | -- | -- | -- | -- | -- |
 | 1 | ASDK | 2.37.4 | 31.4G | 458G | Native | https://asdk.kemkes.go.id/ |
 
 ```DEV```
