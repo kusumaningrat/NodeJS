@@ -11,6 +11,9 @@
 ***DHIS2***
 
 - Facility Profile
+- | No | Server Name | DHIS2 VERSION | Memory | Hardisk | Environment | Web Address | Status |
+|--|--| -- | -- | -- | -- | -- | -- |
+| 1 | ASDK | 2.37.4 | 31.4G | 458G | Native | https://asdk.kemkes.go.id/ |
 | No | Server Name | DHIS2 VERSION | Memory | Hardisk | Environment | Web Address | Status |
 |--|--| -- | -- | -- | -- | -- | -- | 
 | 1 | Facility-Profile Web | 2.38.0 | 31.4G | 49G | Docker | https://asdk.kemkes.go.id/ | Active |
