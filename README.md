@@ -12,31 +12,31 @@
 
 - Facility Profile
 | No | Server Name | DHIS2 VERSION | Memory | Hardisk | Environment | Web Address | Status |
-|--|--| -- | -- | -- | -- | -- | -- | -- |
+|--|--| -- | -- | -- | -- | -- | -- | 
 | 1 | Facility-Profile Web | 2.38.0 | 31.4G | 49G | Docker | https://asdk.kemkes.go.id/ | Active |
 | 2 | Facility-Profile DB | 2.38.0 | 31.4G | 49G | Docker | https://asdk.kemkes.go.id/ | Active |
 | 3 | Facility-Profile Redis| 2.38.0 | 31.4G | 49G | Docker | https://asdk.kemkes.go.id/ | Active |
 - Esismal
 | No | Server Name | DHIS2 VERSION | Memory | Hardisk | Environment | Web Address | Status |
-|--|--| -- | -- | -- | -- | -- | -- |
+|--|--| -- | -- | -- | -- | -- | -- | 
 | 1 | Esismal-Dhis Web | 2.35.12 | 15.6G | 9.6G | Native | https://esismal-dhis.castellumdigital.org | Active |
 | 2 | Esismal-Dhis DB | 2.35.12 | 15.6G | 9.6G | Native | https://esismal-dhis.castellumdigital.org | Active |
 | 3 | Esismal-Dhis Redis | 2.35.12 | 15.6G | 9.6G | Native | https://esismal-dhis.castellumdigital.org | Active |
 - Jumpa Dokter
 | No | Server Name | DHIS2 VERSION | Memory | Hardisk | Environment | Web Address | Status |
-|--|--| -- | -- | -- | -- | -- | -- |
+|--|--| -- | -- | -- | -- | -- | -- | 
 | 1 | Jumpa Dokter Web | 2.35.11 | 31.4G | 49G | Docker | https://jd-services.castellumdigital.org/ | Active |
 | 2 | Jumpa Dokter DB | 2.35.11 | 31.4G | 49G | Docker | https://jd-services.castellumdigital.org/ | Active |
 | 3 | Jumpa Dokter Redis | 2.35.11 | 31.4G | 49G | Docker | https://jd-services.castellumdigital.org/ | Active |
 - LMS Training
-|--|--| -- | -- | -- | -- | -- | -- |
 | No | Server Name | DHIS2 VERSION | Memory | Hardisk | Environment | Web Address | Status |
+|--|--| -- | -- | -- | -- | -- | -- | 
 | 1 | LMS-Training Web | 2.38.0 | 31.4G | 49G | Docker | https://lms-training.castellumdigital.org/ | Active |
 | 2 | LMS-Training DB| 2.38.0 | 31.4G | 49G | Docker | https://lms-training.castellumdigital.org/ | Active |
 | 3 | LMS-Training Redis | 2.38.0 | 31.4G | 49G | Docker | https://lms-training.castellumdigital.org/ | Active |
 - Denpasar
-|--|--| -- | -- | -- | -- | -- | -- |
 | No | Server Name | DHIS2 VERSION | Memory | Hardisk | Environment | Web Address | Status |
+|--|--| -- | -- | -- | -- | -- | -- | 
 | 1 | Denpasar Web | 2.38.0 | 31.4G | 49G | Docker | https://datakesehatandenpasar.castellumdigital.org/ | Active |
 | 2 | Denpasar DB| 2.38.0 | 31.4G | 49G | Docker | https://datakesehatandenpasar.castellumdigital.org/ | Active |
 | 3 | Denpasar Redis | 2.38.0 | 31.4G | 49G | Docker | https://datakesehatandenpasar.castellumdigital.org/ | Active |
